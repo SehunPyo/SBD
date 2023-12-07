@@ -1,8 +1,8 @@
 body
 {
-    background-color: rgb(30, 42, 65);
-    background-repeat: no-repeat;                               
-    background-size: cover;              
+    background: var(--background);
+    color: var(--color);
+    transition: 10s;
     width: 100vw;
     height: 100vh;    
     overflow-y: hidden;
@@ -13,7 +13,10 @@ body
     outline: 0;
 }
 
-
+:root {
+    --color: #ffffff;
+    --background: #17232c;
+  }
 /* ============================================================ */
 
 .title
@@ -25,6 +28,10 @@ body
     top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: 10s;
+    text-shadow: -1px -1px 0px var(--background),
+    3px 3px 0px var(--background),
+    6px 6px 0px #00000055;
 }
 
 .pwd

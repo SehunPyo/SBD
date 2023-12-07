@@ -1,0 +1,150 @@
+body
+{
+    background-color: rgb(30, 42, 65);
+    background-repeat: no-repeat;                               
+    background-size: cover;              
+    width: 100vw;
+    height: 100vh;    
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+/* ============================================================ */
+
+.title
+{
+    color: aliceblue;
+    font-size: 40px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pwd
+{
+    color: rgb(159, 159, 159);
+    font-size: 20px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    width: 135px;
+    height: 3%;
+    resize: none;
+}
+
+/* ============================================================ */
+
+.main_box
+{
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 65%;
+    /* 수직 중앙 정렬하기 */
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 수직 중앙 정렬하기 */
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow: auto;
+}
+
+/* ============================================================ */
+
+.message
+{
+    background-color: rgb(255, 233, 108);
+    width: 94%;
+    height: 130px;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 7px;
+    resize: none;    
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+}
+
+
+/* ============================================================ */
+
+.message_note
+{
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 8%;
+    /* 수직 중앙 정렬하기 */
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 수직 중앙 정렬하기 */
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 10px;
+    resize: none;
+    font-size: 22px;
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+}
+
+/* ============================================================ */
+
+.btn
+{   
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 183, 183);
+    position: absolute;
+    top: 94.5%;
+    left: 50%;
+    width: 95%;
+    height: 5%;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.btn:active
+{
+    width: 94.5%;
+    height: 4.5%;
+    background-color: rgb(216, 135, 135);
+}
+
+.delete-button
+{
+    background-color: aquamarine;
+    margin-top: -20px;
+}
+
+/* ============================================================ */
+
+.main_box::-webkit-scrollbar {
+	background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.main_box::-webkit-scrollbar-thumb{
+    background-color: rgb(253, 235, 130);
+    border-radius: 50px;
+}
+
+/* ============================================================ */
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

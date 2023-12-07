@@ -161,3 +161,31 @@ button.addEventListener('click', function() {
     // 새로운 textarea에 삭제 버튼 추가
     newTextArea.parentNode.insertBefore(deleteButton, newTextArea.nextSibling);
 });
+
+
+// ============================================================================= //
+
+
+// MySQL DB 연결
+document.getElementById('btn').addEventListener('click', function() {
+    var message = document.getElementById('message_note').value; // Textarea에서 메시지 내용 가져옴
+    var pwd = document.getElementById('pwd').value; // 비밀번호 필드에서 비밀번호 가져옴
+  
+    // fetch('/save-text', {
+    fetch('http://localhost:3000/save-text', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ message: message, pwd: pwd }) // 메시지와 비밀번호를 JSON 형식으로 변환하여 서버에 전송
+    })
+    .then(response => response.text())
+    .then(data => console.log(data)) // 서버 응답 처리
+    .catch(error => console.error('Error:', error)); // 오류 처리
+  });
+  
+
+
+// 다른 도메인이나 포트에서 실행되는 경우 오류 방지
+const cors = require('cors');
+app.use(cors());
